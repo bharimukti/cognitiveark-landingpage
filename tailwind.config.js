@@ -12,7 +12,7 @@ module.exports = {
         sans: ["Futura", ...defaultTheme.fontFamily.sans],
       },
       screens: {
-        "3xl": "1800px",
+        "3xl": "1681px",
       },
       colors: {
         primary: "#fbec97",
