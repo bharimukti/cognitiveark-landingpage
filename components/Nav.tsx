@@ -1,4 +1,5 @@
 import { FC, useEffect, useState } from "react";
+import Link from "next/link";
 
 const Nav: FC = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -27,11 +28,19 @@ const Nav: FC = () => {
         <div className="container max-w-screen-lg mx-auto">
           <nav className="flex justify-end font-display">
             <ul className="flex items-center space-x-8 py-4">
-              <li>Home</li>
-              <li>About Us</li>
-              <li>Roadmap</li>
-              <li>Disclaimer</li>
-              <li>Team</li>
+              {["Home", "About Us", "Roadmap", "Disclaimer", "Team"].map(
+                (menuItem) => {
+                  return (
+                    <li key={menuItem}>
+                      <Link href="/">
+                        <a className="transition-colors hover:text-secondary duration-100 ease-in-out">
+                          {menuItem}
+                        </a>
+                      </Link>
+                    </li>
+                  );
+                }
+              )}
             </ul>
           </nav>
         </div>
