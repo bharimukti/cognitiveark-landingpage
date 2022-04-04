@@ -1,5 +1,6 @@
 import type { NextPage } from "next";
 import Head from "next/head";
+import Image from "next/image";
 import Divider from "./../components/Divider";
 import Nav from "./../components/Nav";
 
@@ -84,6 +85,61 @@ const Home: NextPage = () => {
             <strong>- Albert Einstein -</strong>
           </p>
           <Divider />
+        </div>
+      </section>
+      <section>
+        <div className="container max-w-screen-lg mx-auto py-24">
+          <h2 className="font-display text-5xl text-center mb-24">Team</h2>
+          <div className="flex flex-wrap">
+            <div className="w-1/3">
+              <Image
+                src="/assets/images/team-efacsen.png"
+                alt="Efacsen"
+                height={588}
+                width={581}
+              />
+            </div>
+            <div className="w-1/3">
+              <Image
+                src="/assets/images/team-putripadalarang.png"
+                alt="Putripadalarang"
+                height={588}
+                width={581}
+              />
+            </div>
+            <div className="w-1/3">
+              <Image
+                src="/assets/images/team-nowhereman.png"
+                alt="Nowhereman"
+                height={588}
+                width={581}
+              />
+            </div>
+            <div className="w-1/3">
+              <Image
+                src="/assets/images/team-mudikersjawa.png"
+                alt="Mudikersjawa"
+                height={588}
+                width={581}
+              />
+            </div>
+            <div className="w-1/3">
+              <Image
+                src="/assets/images/team-haulerkonj.png"
+                alt="Haulerkonj"
+                height={588}
+                width={581}
+              />
+            </div>
+            <div className="w-1/3">
+              <Image
+                src="/assets/images/team-kvlj.png"
+                alt="Kvlj"
+                height={588}
+                width={581}
+              />
+            </div>
+          </div>
         </div>
       </section>
     </div>
