@@ -1,6 +1,5 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import Image from "next/image";
 import Divider from "./../components/Divider";
 import Email from "../components/icons/Email";
 import Instagram from "../components/icons/Instagram";
@@ -76,12 +75,8 @@ const Home: NextPage = () => {
             </div>
           </section>
           <div className="absolute inset-x-0 -mt-20 sm:-mt-32 lg:-mt-44 xl:-mt-64 select-none">
-            <Image
-              src="/assets/images/cables.png"
-              alt=""
-              width={2107}
-              height={607}
-            />
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/assets/images/cables.png" alt="" />
           </div>
           <section className="py-32 sm:py-60 xl:py-0 xl:h-screen flex items-center relative">
             <div className="container px-4 sm:px-0 max-w-screen-sm lg:max-w-screen-md 2xl:max-w-screen-lg mx-auto flex flex-col">
@@ -131,11 +126,10 @@ const Home: NextPage = () => {
               ].map((teamMember) => {
                 return (
                   <div className="w-1/2 sm:w-1/3" key={teamMember}>
-                    <Image
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
                       src={`/assets/images/team-${teamMember.toLocaleLowerCase()}.png`}
                       alt={teamMember}
-                      height={588}
-                      width={581}
                     />
                   </div>
                 );
