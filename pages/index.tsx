@@ -28,7 +28,7 @@ const Home: NextPage = () => {
               <p className="text-2xl text-center mb-1">
                 Interdimensional interactive comic NFT
               </p>
-              <p className="text-2xl text-center font-bold">
+              <p className="text-2xl text-center font-bold text-secondary">
                 Experience NFT as the multi-dimensional storyline of the future
               </p>
             </div>
@@ -39,8 +39,8 @@ const Home: NextPage = () => {
             <div className="container max-w-screen-lg mx-auto py-12 flex flex-col items-center">
               <Divider />
               <p className="text-xl text-center uppercase">
-                <strong>We Are The Ark</strong> - Bridging The Community Of Art
-                Culture And Tradition
+                <strong className="text-primary">We Are The Ark</strong> -
+                Bridging The Community Of Art Culture And Tradition
                 <br />
                 With The Fast Paced Technology World
                 <br />
@@ -54,7 +54,9 @@ const Home: NextPage = () => {
               <h2 className="text-right font-display text-5xl mb-2">
                 Explore The Unknown
                 <br />
-                Terraform The NFT-Community
+                <span className="text-primary">
+                  Terraform The NFT-Community
+                </span>
               </h2>
               <p className="text-right text-xl max-w-prose">
                 We are exploring new frontiers of creative ideas and
@@ -75,7 +77,7 @@ const Home: NextPage = () => {
           <section className="h-screen flex items-center relative">
             <div className="container max-w-screen-lg mx-auto flex flex-col">
               <h2 className="font-display text-5xl mb-2">
-                Because Everything Is Art
+                Because <span className="text-primary">Everything Is Art</span>
                 <br />
                 In Our Eyes.
               </h2>
@@ -97,7 +99,7 @@ const Home: NextPage = () => {
                 everywhere.&quot;
               </p>
               <p className="text-xl text-center uppercase">
-                <strong>- Albert Einstein -</strong>
+                <strong className="text-secondary">- Albert Einstein -</strong>
               </p>
               <Divider />
             </div>
@@ -105,8 +107,10 @@ const Home: NextPage = () => {
         </section>
         <section id="teamSection" className="relative">
           <div className="absolute top-0 inset-x-0 h-48 bg-gradient-to-t from-transparent to-black"></div>
-          <div className="relative container max-w-screen-lg mx-auto py-24">
-            <h2 className="font-display text-5xl text-center mb-24">Team</h2>
+          <div className="relative container max-w-screen-lg mx-auto pt-24 pb-60">
+            <h2 className="font-display text-5xl text-center mb-24 text-primary">
+              Team
+            </h2>
             <div className="flex flex-wrap">
               <div className="w-1/3">
                 <Image
