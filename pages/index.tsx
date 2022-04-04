@@ -1,6 +1,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import Divider from "./../components/Divider";
+import Nav from "./../components/Nav";
 
 const Home: NextPage = () => {
   return (
@@ -11,19 +12,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className="fixed top-0 inset-x-0 z-10">
-        <div className="container max-w-screen-lg mx-auto">
-          <nav className="flex justify-end font-display">
-            <ul className="flex items-center space-x-8 py-4">
-              <li>Home</li>
-              <li>About Us</li>
-              <li>Roadmap</li>
-              <li>Disclaimer</li>
-              <li>Team</li>
-            </ul>
-          </nav>
-        </div>
-      </div>
+      <Nav />
       <section className="min-h-screen">
         <div className="relative container max-w-screen-lg mx-auto">
           <div className="py-24 min-h-screen flex flex-col items-center justify-center">
