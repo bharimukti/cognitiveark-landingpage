@@ -1,6 +1,9 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
+import Email from "../components/icons/Email";
+import Instagram from "../components/icons/Instagram";
+import Whatsapp from "../components/icons/Whatsapp";
 import Divider from "./../components/Divider";
 import Nav from "./../components/Nav";
 
@@ -139,6 +142,30 @@ const Home: NextPage = () => {
               })}
             </div>
           </div>
+          <footer>
+            <div className="container max-w-screen-lg mx-auto py-6">
+              <div className="flex justify-end text-primary space-x-6">
+                <a
+                  href="#"
+                  className="hover:text-white transition-colors duration-100 ease-in-out"
+                >
+                  <Instagram />
+                </a>
+                <a
+                  href="#"
+                  className="hover:text-white transition-colors duration-100 ease-in-out"
+                >
+                  <Whatsapp />
+                </a>
+                <a
+                  href="#"
+                  className="hover:text-white transition-colors duration-100 ease-in-out"
+                >
+                  <Email />
+                </a>
+              </div>
+            </div>
+          </footer>
         </section>
       </div>
     </div>

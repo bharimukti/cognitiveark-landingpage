@@ -33,7 +33,7 @@ const Nav: FC = () => {
                   return (
                     <li key={menuItem}>
                       <Link href="/">
-                        <a className="transition-colors hover:text-secondary duration-100 ease-in-out">
+                        <a className="transition-colors hover:text-primary duration-200 ease-in-out">
                           {menuItem}
                         </a>
                       </Link>
