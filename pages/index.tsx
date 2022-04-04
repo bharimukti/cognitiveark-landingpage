@@ -118,54 +118,25 @@ const Home: NextPage = () => {
               Team
             </h2>
             <div className="flex flex-wrap">
-              <div className="w-1/3">
-                <Image
-                  src="/assets/images/team-efacsen.png"
-                  alt="Efacsen"
-                  height={588}
-                  width={581}
-                />
-              </div>
-              <div className="w-1/3">
-                <Image
-                  src="/assets/images/team-putripadalarang.png"
-                  alt="Putripadalarang"
-                  height={588}
-                  width={581}
-                />
-              </div>
-              <div className="w-1/3">
-                <Image
-                  src="/assets/images/team-nowhereman.png"
-                  alt="Nowhereman"
-                  height={588}
-                  width={581}
-                />
-              </div>
-              <div className="w-1/3">
-                <Image
-                  src="/assets/images/team-mudikersjawa.png"
-                  alt="Mudikersjawa"
-                  height={588}
-                  width={581}
-                />
-              </div>
-              <div className="w-1/3">
-                <Image
-                  src="/assets/images/team-haulerkonj.png"
-                  alt="Haulerkonj"
-                  height={588}
-                  width={581}
-                />
-              </div>
-              <div className="w-1/3">
-                <Image
-                  src="/assets/images/team-kvlj.png"
-                  alt="Kvlj"
-                  height={588}
-                  width={581}
-                />
-              </div>
+              {[
+                "Efacsen",
+                "Putripadalarang",
+                "Nowhereman",
+                "Mudikersjawa",
+                "Haulerkonj",
+                "Kvlj",
+              ].map((teamMember) => {
+                return (
+                  <div className="w-1/3" key={teamMember}>
+                    <Image
+                      src={`/assets/images/team-${teamMember.toLocaleLowerCase()}.png`}
+                      alt={teamMember}
+                      height={588}
+                      width={581}
+                    />
+                  </div>
+                );
+              })}
             </div>
           </div>
         </section>
