@@ -16,6 +16,13 @@
 @tailwind components;
 @tailwind utilities;
 
+#content {
+  scroll-snap-type: y mandatory;
+}
+#content section {
+  scroll-snap-align: start;
+}
+
 #titleSection {
   background: url('/assets/images/bg-top.png') center center no-repeat;
   background-size: cover;
@@ -23,6 +30,14 @@
 #middleSection {
   background: url('/assets/images/bg-middle.png') center center no-repeat;
   background-size: cover;
+}
+#middleSection > section:nth-child(2) {
+  background: url('/assets/images/right-face.png') right center no-repeat;
+  background-size: contain;
+}
+#middleSection > section:nth-child(4) {
+  background: url('/assets/images/left-face.png') left center no-repeat;
+  background-size: contain;
 }
 #teamSection {
   background: url('/assets/images/bg-bottom.png') center center no-repeat;

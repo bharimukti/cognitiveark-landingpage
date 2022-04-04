@@ -11,6 +11,9 @@ module.exports = {
         display: ["Valorant", ...defaultTheme.fontFamily.sans],
         sans: ["Futura", ...defaultTheme.fontFamily.sans],
       },
+      screens: {
+        "3xl": "1800px",
+      },
     },
   },
   plugins: [],
