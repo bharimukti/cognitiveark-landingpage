@@ -15,3 +15,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+#titleSection {
+  background: url('/assets/images/bg-top.png') center center no-repeat;
+  background-size: cover;
+}
+#middleSection {
+  background: url('/assets/images/bg-middle.png') center center no-repeat;
+  background-size: cover;
+}
+#teamSection {
+  background: url('/assets/images/bg-bottom.png') center center no-repeat;
+  background-size: cover;
+}

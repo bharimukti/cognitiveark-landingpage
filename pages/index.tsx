@@ -14,8 +14,8 @@ const Home: NextPage = () => {
       </Head>
 
       <Nav />
-      <section className="min-h-screen">
-        <div className="relative container max-w-screen-lg mx-auto">
+      <section id="titleSection" className="min-h-screen relative">
+        <div className="container max-w-screen-lg mx-auto">
           <div className="py-24 min-h-screen flex flex-col items-center justify-center">
             <h1 className="text-7xl text-center font-display">
               The Cognitive Ark
@@ -28,66 +28,70 @@ const Home: NextPage = () => {
             </p>
           </div>
         </div>
+        <div className="absolute bottom-0 inset-x-0 h-24 bg-gradient-to-b from-transparent to-black"></div>
       </section>
-      <section>
-        <div className="container max-w-screen-lg mx-auto py-12 flex flex-col items-center">
-          <Divider />
-          <p className="text-xl text-center uppercase">
-            <strong>We Are The Ark</strong> - Bridging The Community Of Art
-            Culture And Tradition
-            <br />
-            With The Fast Paced Technology World
-            <br />
-            Let&apos;s Write Our Story Together
-          </p>
-          <Divider />
-        </div>
+      <section id="middleSection">
+        <section>
+          <div className="container max-w-screen-lg mx-auto py-12 flex flex-col items-center">
+            <Divider />
+            <p className="text-xl text-center uppercase">
+              <strong>We Are The Ark</strong> - Bridging The Community Of Art
+              Culture And Tradition
+              <br />
+              With The Fast Paced Technology World
+              <br />
+              Let&apos;s Write Our Story Together
+            </p>
+            <Divider />
+          </div>
+        </section>
+        <section className="min-h-screen flex items-center">
+          <div className="container max-w-screen-lg mx-auto flex flex-col items-end">
+            <h2 className="text-right font-display text-5xl mb-2">
+              Explore The Unknown
+              <br />
+              Terraform The NFT-Community
+            </h2>
+            <p className="text-right text-xl max-w-prose">
+              We are exploring new frontiers of creative ideas and implementing
+              these infinite possibilities to reshape the NFT art landscape. We
+              are making our mark on the NFT-Space, building a new world of
+              values with the collective community.
+            </p>
+          </div>
+        </section>
+        <section className="min-h-screen flex items-center">
+          <div className="container max-w-screen-lg mx-auto flex flex-col">
+            <h2 className="font-display text-5xl mb-2">
+              Because Everything Is Art
+              <br />
+              In Our Eyes.
+            </h2>
+            <p className="text-xl max-w-prose">
+              All is all about perspective. The CognitiveArk Lab culture
+              welcomes these manifold of different perspectives as input,
+              downloading them all into our core generator of vision, and
+              synthesizing them all into a valuable piece of art. We are
+              actively shaping the creative future of the art community beyond
+              known worlds.
+            </p>
+          </div>
+        </section>
+        <section>
+          <div className="container max-w-screen-lg mx-auto py-12 flex flex-col items-center">
+            <Divider />
+            <p className="text-xl text-center uppercase mb-4">
+              &quot;Logic will get you from A to B. Imagination will take you
+              everywhere.&quot;
+            </p>
+            <p className="text-xl text-center uppercase">
+              <strong>- Albert Einstein -</strong>
+            </p>
+            <Divider />
+          </div>
+        </section>
       </section>
-      <section className="min-h-screen flex items-center">
-        <div className="container max-w-screen-lg mx-auto flex flex-col items-end">
-          <h2 className="text-right font-display text-5xl mb-2">
-            Explore The Unknown
-            <br />
-            Terraform The NFT-Community
-          </h2>
-          <p className="text-right text-xl max-w-prose">
-            We are exploring new frontiers of creative ideas and implementing
-            these infinite possibilities to reshape the NFT art landscape. We
-            are making our mark on the NFT-Space, building a new world of values
-            with the collective community.
-          </p>
-        </div>
-      </section>
-      <section className="min-h-screen flex items-center">
-        <div className="container max-w-screen-lg mx-auto flex flex-col">
-          <h2 className="font-display text-5xl mb-2">
-            Because Everything Is Art
-            <br />
-            In Our Eyes.
-          </h2>
-          <p className="text-xl max-w-prose">
-            All is all about perspective. The CognitiveArk Lab culture welcomes
-            these manifold of different perspectives as input, downloading them
-            all into our core generator of vision, and synthesizing them all
-            into a valuable piece of art. We are actively shaping the creative
-            future of the art community beyond known worlds.
-          </p>
-        </div>
-      </section>
-      <section>
-        <div className="container max-w-screen-lg mx-auto py-12 flex flex-col items-center">
-          <Divider />
-          <p className="text-xl text-center uppercase mb-4">
-            &quot;Logic will get you from A to B. Imagination will take you
-            everywhere.&quot;
-          </p>
-          <p className="text-xl text-center uppercase">
-            <strong>- Albert Einstein -</strong>
-          </p>
-          <Divider />
-        </div>
-      </section>
-      <section>
+      <section id="teamSection">
         <div className="container max-w-screen-lg mx-auto py-24">
           <h2 className="font-display text-5xl text-center mb-24">Team</h2>
           <div className="flex flex-wrap">
