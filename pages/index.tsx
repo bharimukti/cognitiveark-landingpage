@@ -1,11 +1,11 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
+import Divider from "./../components/Divider";
 import Email from "../components/icons/Email";
 import Instagram from "../components/icons/Instagram";
-import Whatsapp from "../components/icons/Whatsapp";
-import Divider from "./../components/Divider";
 import Nav from "./../components/Nav";
+import Whatsapp from "../components/icons/Whatsapp";
 
 const Home: NextPage = () => {
   return (
