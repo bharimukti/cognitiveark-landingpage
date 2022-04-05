@@ -120,7 +120,7 @@ const Nav: FC = () => {
         } w-2/3 bg-black z-10`}
       >
         <button
-          className="absolute left-full top-6 bg-black p-2"
+          className="absolute left-full top-6 bg-black p-3"
           onClick={(e) => {
             setExpanded(!expanded);
             e.stopPropagation();
